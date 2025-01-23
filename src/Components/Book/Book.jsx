@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Book = ({ book }) => {
-  const {bookId, image, bookName, author, tags, category } = book;
+  const {bookId, image, bookName, author, tags, category, rating, totalPages } = book;
   return (
     <Link to={`/books/${bookId}`}>
       <div className="card bg-base-100 w-96 shadow-xl p-6 border border-[#13131326]">
@@ -22,8 +22,9 @@ const Book = ({ book }) => {
           <div className="border-t-2 border-dashed my-5"></div>
           <div className="card-actions justify-between ">
             <div className="font-medium text-[#131313CC]">{category}</div>
+           
             <div className="rating">
-              <p className="font-medium text-[#131313CC] mr-4">5.00</p>
+              <p className="font-medium text-[#131313CC] mr-4">{rating}</p>
               <input
                 type="radio"
                 name="rating-2"
@@ -31,6 +32,7 @@ const Book = ({ book }) => {
               />
             </div>
           </div>
+          <div className="font-bold">Total Pages: {totalPages}</div>
         </div>
       </div>
     </Link>
