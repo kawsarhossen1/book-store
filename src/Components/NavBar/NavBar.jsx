@@ -8,7 +8,7 @@ const NavBar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li className="hover:border hover:border-[#23BE0A] hover:text-[#23BE0A]  rounded-lg">
-        <a>Listed Books</a>
+        <NavLink to="/listedBooks">Listed Books</NavLink>
       </li>
       <li className="hover:border hover:border-[#23BE0A] hover:text-[#23BE0A]  rounded-lg">
         <a>Pages to Read</a>

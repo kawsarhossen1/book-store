@@ -1,7 +1,7 @@
 const getWishList = () => {
   const storedWishStr = localStorage.getItem("wish-list");
   if (storedWishStr) {
-    storedList = JSON.parse(storedWishStr);
+    const storedList = JSON.parse(storedWishStr);
     return storedList;
   } else {
     return [];

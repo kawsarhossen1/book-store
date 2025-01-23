@@ -1,6 +1,6 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToStoredReadList } from "../../Utility/addToDB";
+import { addToStoredReadList, addToStoredWishList } from "../../Utility/addToDB";
 import { addWishList } from "../../Utility/addToWB";
 
 const BookDetail = () => {
@@ -30,7 +30,7 @@ const BookDetail = () => {
   }
 
   const handleWishList = (id) =>{
-    addWishList(id);
+    addToStoredWishList(id);
   }
 
   return (

@@ -7,7 +7,7 @@ const Book = ({ book }) => {
     <Link to={`/books/${bookId}`}>
       <div className="card bg-base-100 w-96 shadow-xl p-6 border border-[#13131326]">
         <figure className="bg-[#F3F3F3] rounded-2xl py-8">
-          <img src={image} className="h-[166px]" alt={bookName} />
+          <img src={image} className="h-[166px] rounded-md" alt={bookName} />
         </figure>
         <div className="card-body">
           <div className="flex gap-3 justify-center">
